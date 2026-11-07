@@ -1,0 +1,133 @@
+* {
+  --palletColor1: #282b57;
+  --palletColor2: #443482;
+  --palletColor3: #703e9c;
+  --palletColor4: #c2469d;
+  --palletColor5: #e35f8d;
+  --palletColor6: #eb7a7e;
+  --palletColor7: #f59182;
+  --palletColor8: #fab88e;
+
+  --lavenderShade1: #777696;
+  --lavenderShade2: #695887;
+
+  /*--textShadowColor: #9a6fb0;*/
+  --textShadowColor: #282b57;
+
+  --sectionTitleColor: #d0bcff;
+  --sectionTitleOutlineColor: #282b57;
+}
+
+@font-face {
+  font-family: "Mochi Boom DEMO";
+  src: url("../../fonts/Mochi Boom DEMO.ttf");
+}
+
+body {
+  background-image: url("https://files.catbox.moe/iew636.jpg");
+}
+
+#main-container {
+  max-height: max-content;
+  max-width: 100vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 5px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-image: url("https://i.imgur.com/NJa4bp2.png") 8 fill round;
+}
+
+header {
+  background-color: var(--lavenderShade2);
+  padding: 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: "pixel";*/
+  font-size: 18px;
+
+  color: white;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+header a {
+  width: fit-content;
+  transition: 0.2s ease;
+  color: pink;
+}
+
+header a:hover {
+  color: hotpink;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.subtitle {
+  color: var(--sectionTitleColor);
+  font-size: 0.9em;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--palletColor1);
+  margin: 1em 0;
+}
+
+h1 {
+  /* font-family: "Mochi Boom DEMO"; */
+
+  font-size: 45px;
+  /* letter-spacing: 2px; */
+
+  color: pink;
+}
+
+h2 {
+  font-family: "Mochi Boom DEMO";
+
+  font-size: 45px;
+  letter-spacing: 2px;
+
+  color: var(--lavenderShade2);
+}
+
+main {
+  font-family: "Mochi Boom DEMO";
+
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: "pixel";*/
+  font-size: 18px;
+}
+
+main h3 a {
+  font-family: "Mochi Boom DEMO";
+
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+main a {
+  width: fit-content;
+  transition: 0.2s ease;
+  color: var(--lavenderShade1);
+}
+
+main a:hover {
+  color: hotpink;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+code {
+  background-color: var(--lavenderShade1);
+  color: pink;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}

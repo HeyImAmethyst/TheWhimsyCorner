@@ -1,0 +1,154 @@
+/* 
+[08] Code Snippet - Hexagon Button Menu by Gasara / 2018
+https://www.deviantart.com/gasara
+
+*/
+
+
+/* ------------- Clean Up ------------- */
+
+* 
+{
+    background: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    
+    /*cursor: url(http://sunnyneo.com/pointers/cur_fae_dark.gif), auto !important;*/
+    cursor: url(http://sunnyneo.com/pointers/pinixycursor.gif), auto !important;
+}
+
+body 
+{
+    padding: 15px;
+    /*background-image: url("https://files.catbox.moe/7ktzfo.png");*/
+    background:url(http://sunnyneo.com/background/S_Faeriedoll_BG.jpg);
+}
+
+hr
+{
+    text-align: center;
+    color: darkslategrey;
+    background-color: darkslategrey;
+    width: 1fr;
+    /*size: 50px;*/
+}
+
+#main-container
+{
+    /*width: 780px;*/
+    /*max-height: 800px;*/
+    /*margin: 60px auto 5px 0px;*/
+    max-width: 80vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#center-container
+{
+    /*width: 880px;*/
+}
+
+footer
+{
+    margin-top: 20px;
+    background-color: azure;
+    padding: 15px;
+    
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: cornflowerblue;
+}
+
+.box02
+{
+    background: url("https://files.catbox.moe/4u104y.gif");
+    border: solid 1px #483b3c;
+    margin: 1em 0; /* 中央寄せは0をautoに変更 */
+    padding: 20px 0;
+    /*width: 80%   幅 ;*/
+}
+
+.box-inner
+{
+    background: #fff;
+    border-bottom: 2px dashed #c3c2ad;
+    border-top: 2px dashed #c3c2ad;
+    box-shadow: 0 4px 0 #fff,0 -4px 0 #fff;
+    padding: 15px
+}
+
+#welcome-title
+{
+    margin: 45px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: DarkSlateGrey;
+}
+
+#neopets-resources-container
+{
+    display: grid;
+    grid-gap: 1px;
+    
+    grid-template-columns: auto  auto;
+    grid-template-rows: 1fr;
+    
+    grid-template-areas:
+        "sunnyneo jellyneo"
+        "other .";
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: DarkSlateGrey;
+    font-size: 18px;
+}
+
+#sunnyneo-container
+{
+    grid-area: sunnyneo;
+}
+
+#jellyneo-container
+{
+    grid-area: jellyneo;
+}
+
+#other-container
+{
+    grid-area: other;
+}
+
+#other-container h2
+{
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: DarkSlateGrey;
+    
+}
+
+#neopets-resources-container li
+{
+    margin: 17px 0;
+    margin-left:25px;
+    padding: 5px;
+    /*list-style: none;*/
+    text-align: left;
+    list-style-image:url('https://files.catbox.moe/vpe49s.gif');
+}
+
+a
+{
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: darkslateblue;
+    
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}

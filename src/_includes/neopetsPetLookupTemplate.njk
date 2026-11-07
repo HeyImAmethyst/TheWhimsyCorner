@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ pageTitle }}</title>
+    
+    {% include 'elements/websiteIcons.njk' %}
+
+    <link href ="{{ nesting }}css/petLookup.css{{ nocache }}" rel= "stylesheet">
+  </head>
+  
+  {{ content | safe }}
+  
+</html>

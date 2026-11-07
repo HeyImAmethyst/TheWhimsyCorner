@@ -1,0 +1,341 @@
+*{
+    --palletColor1 : #282B57;
+    --palletColor2 : #443482;
+    --palletColor3 : #703E9C;
+    --palletColor4 : #C2469D;
+    --palletColor5 : #E35F8D;
+    --palletColor6 : #EB7A7E;
+    --palletColor7 : #F59182;
+    --palletColor8 : #FAB88E;
+    
+    --lavenderShade1 : #777696;
+    --lavenderShade2 : #695887;
+    
+    /*--textShadowColor: #9a6fb0;*/
+    --textShadowColor: #282B57;
+    
+    --sectionTitleColor: #d0bcff;
+    --sectionTitleOutlineColor: #282b57;
+}
+
+
+@font-face 
+{
+    font-family: kawaii stitch;
+    src: url(https://dl.dropbox.com/s/yjal3we9j6biyn5/Kawaii%20Stitch.ttf);
+}
+ 
+@font-face 
+{
+    font-family: starborn;
+    src: url(https://dl.dropbox.com/s/l0541on0m5eqvdj/Starborn.ttf);
+}
+ 
+@font-face 
+{
+    font-family: pixel;
+    src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
+}
+ 
+@font-face 
+{
+    src: url(https://dl.dropbox.com/s/ct0s037q78sao3f/Frighted.ttf);
+    font-family: Frighted;
+}
+ 
+@font-face 
+{
+    src: url(https://dl.dropbox.com/s/ktlx5w7t8gk42nb/SakeMoru-Regular.ttf);
+    font-family: SakeMoru;
+}
+ 
+@font-face 
+{
+    font-family:'yipes';
+    src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);
+}
+ 
+@font-face 
+{
+    font-family:'fenotype';
+    src: url(https://dl.dropbox.com/s/klo6yfrf62916qp/02.10FEN.TTF);
+}
+
+@font-face {
+  font-family: 'guignolet-kirsch-lat';
+  src: url('../../fonts/guignolet-kirsch-lat.otf');
+}
+
+@font-face {
+  font-family: 'rounded-blocks-filled';
+  src: url('../../fonts/rounded-blocks-filled.otf');
+}
+
+@font-face {
+  font-family: 'Cosmo Corner';
+  src: url('../../fonts/Cosmo Corner.ttf');
+}
+
+@font-face {
+  font-family: 'Milkyway DEMO';
+  src: url('../../fonts/Milkyway DEMO.ttf');
+}
+
+@font-face {
+  font-family: 'Mochi Boom DEMO';
+  src: url('../../fonts/Mochi Boom DEMO.ttf');
+}
+
+#main-container
+{
+    /*grid-template-columns: 12rem  1fr 24rem;*/
+    /* grid-template-rows: auto  1fr  auto; */
+    grid-template-columns: 20rem  1fr 20rem;
+    
+    grid-template-areas:
+        "header header header"
+        "navbar center rightSidebar"
+        "footer footer footer";
+
+    /* grid-template-areas:
+        "header navbar rightSidebar"
+        "center center center"
+        "footer footer footer"; */
+    
+    border-width:7px;
+    border-style: solid;
+    border-image: url("https://i.imgur.com/NJa4bp2.png") 8 fill round;        
+
+}
+
+@media only screen and (max-width:1030px)
+{
+    #main-container
+    {
+        grid-template-columns: 1fr;
+        /*grid-template-rows: repeat(7, 0.4fr);*/
+        
+        grid-template-areas:
+            "header"
+            "navbar"
+            "center"
+            "rightSidebar"
+            "footer";
+    }
+    
+    #center-container
+    {
+
+        grid-area: center;
+
+        display:grid;
+
+        grid-template-columns: 1fr;
+        /*grid-template-rows: auto 0.0fr;*/
+
+        grid-template-areas:
+            "main"
+            "neighbors";
+            /* "extra"; */
+
+        grid-gap: 8px;
+    }
+    
+    nav 
+    {
+        text-align: center;
+    }
+    
+    nav ul
+    {
+        padding: 0;
+        list-style-type: none;
+        list-style-position: inside;
+    }
+}
+
+#center-container
+{
+    
+    grid-area: center;
+
+    /* height: max-content; */
+
+    display:grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.98fr;
+    
+    grid-template-areas:
+        "main"
+        "neighbors";
+        /* "extra"; */
+    
+    grid-gap: 8px;
+
+    /* background-color: #282B57; */
+}
+
+main
+{  
+    grid-area: main;
+
+    border: black 2px solid;
+    height: max-content;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: "pixel";*/
+    font-size: 24px;
+    /*font-weight: 400;*/
+    /*letter-spacing: 2px;*/
+    /*line-height: 30px;*/
+    
+    background-color: azure;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    
+    grid-template-rows: auto 1fr;
+    /*
+    grid-template-areas:
+        "welcome-title welcome-image"
+        "welcome-text welcome-text";
+        */
+    
+    grid-template-areas:
+        "welcome-title"
+        "welcome-text";
+    
+    overflow-y:auto;
+    overflow-x: hidden;
+    
+    position: relative;
+}
+
+#neighbors
+{
+    grid-area: neighbors;
+    
+    /* border: black 2px solid; */
+    height: max-content;
+    
+    background-color: azure;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    
+    /* display: grid; */
+    
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+#extra
+{
+    grid-area: extra;
+
+    height: max-content;
+
+    /* background-color: black; */
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+#websites-container
+{
+    font-family: "Mochi Boom DEMO";
+    
+    font-size: large;
+    letter-spacing: 2px;
+    text-align: center;
+    
+    color: var(--palletColor3);
+}
+
+#websites
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+#websites-content 
+{ 
+    margin: 0 auto; 
+    padding:15px; 
+    width:100%; 
+    box-sizing:border-box; 
+    
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-title
+{
+    
+    grid-area: welcome-title;
+    
+    display: flex;
+    
+    font-family: 'Milkyway DEMO';
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    letter-spacing: 5px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    
+    justify-content: center;
+    
+    filter: drop-shadow( 0 3px var(--textShadowColor)) drop-shadow( 2px 0 var(--textShadowColor)) drop-shadow( 0 -1px #ffa9c2) drop-shadow( -1px 0 var(--textShadowColor)) drop-shadow( 0 5px white) drop-shadow( 5px 0 white) drop-shadow( 0 -5px white) drop-shadow( -5px 0 white) drop-shadow(1px 1px 0 rgba(172,172,172,0.6)) drop-shadow(1px 1px 0 rgba(172,172,172,0.6)) drop-shadow( 0 0 2px #424242);
+    color: var(--sectionTitleColor);
+}
+
+
+#welcome-text
+{
+    grid-area: welcome-text;
+
+    text-align: center;
+    padding: 25px;
+}
+
+#welcome-image
+{
+    /*grid-area: welcome-image;*/
+    /*grid-row: 1 / 3;*/
+    /*grid-column: 1 / 3;*/
+    
+    display: flex;
+    
+    padding: 10px;
+    width: calc(81px * 0.9);
+    height: calc(190px * 0.9);
+    
+    justify-content: center;
+    
+    position: absolute;
+    
+    left: 0px;
+    
+    z-index: 1;
+}
+
+#welcome-image img
+{
+    width: 100%;
+    height: auto;
+}

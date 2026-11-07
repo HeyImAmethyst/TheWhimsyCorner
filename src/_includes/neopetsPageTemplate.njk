@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ pageTitle }}</title>
+    
+    {% include 'elements/websiteIcons.njk' %}
+    
+  </head>
+  
+  <body>
+        
+        <a href="http://www.neopets.com/~TheSunnyNeo" target="_blank"><img src="http://snimg.co/linktous/bgbutton.gif" border="0" alt="SunnyNeo.com" /></a>
+        <a href="http://www.neopets.com/~TheSunnyNeo" target="_blank"><img src="http://snimg.co/linktous/cursorbanner.gif" width="100" height="36" border="0"></a>
+
+        <div id="main-container">
+            <div id="center-container" >
+                
+                <div class="box02">
+                    
+                    <main class="box-inner">
+                        
+                        {{ content | safe }}
+                        
+                    </main>
+                    
+                </div>
+                
+                <footer>
+                    <div id="footer-text">
+                        <p>
+                            Website began production in December of 2025 - Made by HeyImAmethyst - Hosted by Neocities
+                        </p>
+                    </div>
+                
+                </footer>
+            </div>
+        </div>
+        
+    </body>
+  
+</html>

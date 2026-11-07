@@ -1,0 +1,251 @@
+/* 
+[08] Code Snippet - Hexagon Button Menu by Gasara / 2018
+https://www.deviantart.com/gasara
+
+*/
+
+
+/* ------------- Clean Up ------------- */
+
+* 
+{
+    background: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    
+    /*cursor: url(http://sunnyneo.com/pointers/cur_fae_dark.gif), auto !important;*/
+    cursor: url(http://sunnyneo.com/pointers/pinixycursor.gif), auto !important;
+}
+
+body 
+{
+    padding: 15px;
+    /*background-image: url("https://files.catbox.moe/7ktzfo.png");*/
+    background:url(http://sunnyneo.com/background/S_Faeriedoll_BG.jpg);
+    
+}
+
+hr
+{
+    text-align: center;
+    color: darkslategrey;
+    background-color: darkslategrey;
+    width: 1fr;
+    /*size: 50px;*/
+}
+
+#main-container
+{
+    /*width: 780px;*/
+    /*max-height: 800px;*/
+    /*margin: 60px auto 5px 0px;*/
+    max-width: 100vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#center-container
+{
+    /*width: 880px;*/
+}
+
+#neopets-container
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #695887;
+    font-size: 18px;
+}
+
+footer
+{
+    margin-top: 20px;
+    background-color: azure;
+    padding: 15px;
+    
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: cornflowerblue;
+}
+
+.box02
+{
+    background: url("https://files.catbox.moe/4u104y.gif");
+    border: solid 1px #483b3c;
+    margin: 1em 0; /* 中央寄せは0をautoに変更 */
+    padding: 20px 0;
+    /*width: 80%   幅 ;*/
+}
+
+.box-inner
+{
+    background: #fff;
+    border-bottom: 2px dashed #c3c2ad;
+    border-top: 2px dashed #c3c2ad;
+    box-shadow: 0 4px 0 #fff,0 -4px 0 #fff;
+    padding: 15px
+}
+
+#welcome-title
+{
+    margin: 45px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: DarkSlateGrey;
+}
+
+#my-neopets-container
+{
+    display: grid;
+    
+    grid-gap: 15px;
+    
+    grid-template-areas:
+        "userInfo collections"
+        "neopets neopets"
+        "games games";
+}
+
+.contentModuleHeader
+{
+    height: 25px;
+    color: #FAB88E;
+    background-color: IndianRed ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+#userInfo
+{
+    grid-area: userInfo;
+}
+
+#user-info-content
+{
+    
+    display: grid;
+    
+    grid-template-columns: 0.7fr auto;
+    grid-template-rows: auto;
+    
+    grid-template-areas:
+        "userInfoText userInfoImage";
+}
+
+#user-info-text
+{
+    grid-area: userInfoText;
+    
+    text-align: left;
+    padding: 15px;
+}
+
+#user-info-image
+{
+    grid-area: userInfoImage;
+    text-align: center;
+    padding: 15px;
+}
+
+#collections
+{
+    grid-area: collections;
+    
+}
+
+#collections-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+#neopets
+{
+    grid-area: neopets;
+}
+
+#neopets-content
+{
+    display: flex;
+    
+    padding: 15px;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    gap: 15px;
+}
+
+#games
+{
+    grid-area: games;
+}
+
+/*Trophies*/
+    
+    #usertrophies img 
+    {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #695887;
+    }
+    
+    #usertrophies 
+    {
+        font-size: 120px;
+    }
+    
+    #usertrophies b 
+    {
+        font-weight: bold;
+        font-size: 16px;
+        color: #695887;
+    }
+    
+    .trophy_cell
+    {
+        border: none;
+        border: 2px hidden transparent;
+    }
+
+hr
+{
+    background-color: lightgray;
+}
+
+b 
+{
+    color: #cda4dc;
+}
+
+i 
+{
+    color: #842984;
+}
+
+a
+{
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: darkslateblue;
+    
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}

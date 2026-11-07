@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="rss.xslt" type="text/xml"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <atom:link href="https://heyimamethyst.neocities.org/rssBlog.xml" rel="self" type="application/rss+xml" />
+    <title>The Whimsy Blog</title>
+    <link>https://heyimamethyst.neocities.org/pages/blog.html</link>
+    <description>A blog were a whimsy witch shares her thoughts.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jun 2026 19:55:50 EST</lastBuildDate>
+    <ttl>60</ttl>
+
+    <image>
+      <url>https://heyimamethyst.neocities.org/apple-touch-icon.png</url>
+      <title>The Whimsy Blog</title>
+      <link>https://heyimamethyst.neocities.org/pages/blog.html</link>
+      <width>88</width>
+      <height>88</height>
+    </image>
+
+    <item>
+      <title>New Samsung Tablet Using LineageOS</title>
+      <link>https://heyimamethyst.neocities.org/pages/posts/2026,08,07,New,Samsung,Tablet,Using,LineageOS.html</link>
+      <guid isPermaLink="false">update-7-30-2026</guid>
+      <pubDate>Fri, 7 Aug 2026 10:02:00 EST</pubDate>
+      
+      <description><![CDATA[
+        In this post, I talk about buying a new Samsung tablet for school and my experience installing LineageOS on it.
+      ]]></description>
+
+    </item>
+
+    <item>
+      <title>Eleventy, New Blog, RSS, and Etsy!</title>
+      <link>https://heyimamethyst.neocities.org/pages/posts/2026,07,30,Eleventy,New,Blog,RSS,and,Etsy.html</link>
+      <guid isPermaLink="false">update-7-30-2026</guid>
+      <pubDate>Thur, 30 Jul 2026 10:14:00 EST</pubDate>
+      
+      <description><![CDATA[
+        In this post I do into more detail of the updates I made to my website. I learned how to use eleventy, made a new blog using Zonelets, created a new rss feed for my blog, and gave my rss feeds a new look.
+      ]]></description>
+
+    </item>
+    
+  </channel>
+</rss>

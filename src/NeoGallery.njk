@@ -1,0 +1,99 @@
+---
+layout: galleryGridTemplate.njk
+pageTitle: The Whimsy Gallery
+headerTitle: The Whimsy Gallery
+nesting: ""
+pagesPath: pages/
+---
+
+<main id="center-container">
+    <center>
+        <a id="reshuffle"
+            >Random Selection, by default loads 6 random entries. id="reshuffle" will make an element
+            reshuffle it. Click me.
+        </a>
+    </center>
+
+    <!--if you want to add a new gallery item on your page, add everything between this comment, and the one that states 'snippet end'-->
+    <div class="gallery" data-tag="random">
+        <!--galleryLoader shows while gallery items are parsed from the media json-->
+        <div class="galleryLoader">
+            <div>
+                <img src="{{ nesting }}img/hourglass.gif" alt="Loading..." />
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <!--myModal shows when an image is clicked-->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="loadingPlaceholder" class="loading" src="{{ nesting }}img/hourglass.gif" />
+        <img class="modal-content" id="img01" />
+        <div id="title"></div>
+        <div id="caption"></div>
+    </div>
+
+    <!--snippet end-->
+    <center>
+        <div class="tagDirectory">
+            <!--If you wish to add a tag directory, linking to other gallery pages, place the comment END as seen below this one, wherever you want links to begin appearing. It is how NeoGallery determines where to put in the new tag link.-->
+            <!--END-->
+            <!--Digital Art-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Digital Art.html"><p class="genreheader">Digital Art</p><img src="" alt=""></a></div>
+            <!--END-->
+
+            <!--Blender 3D-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Blender 3D.html"><p class="genreheader">Blender 3D</p><img src="__COVER_PHOTO__" alt=""></a></div>
+            <!--END-->
+            <!--Traditional Art-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Traditional Art.html"><p class="genreheader">Traditional Art</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Comics-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Comics.html"><p class="genreheader">Comics</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Polymer Clay-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Polymer Clay.html"><p class="genreheader">Polymer Clay</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Random-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Random.html"><p class="genreheader">Random</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Animal Crossing-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Animal Crossing.html"><p class="genreheader">Animal Crossing</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Coloring Pages-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Coloring Pages.html"><p class="genreheader">Coloring Pages</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Minecraft-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Minecraft.html"><p class="genreheader">Minecraft</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Magica Voxel-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Magica Voxel.html"><p class="genreheader">Magica Voxel</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Cinema 4D-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Cinema 4D.html"><p class="genreheader">Cinema 4D</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Pixel Art-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Pixel Art.html"><p class="genreheader">Pixel Art</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--MMD-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/MMD.html"><p class="genreheader">MMD</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Vroid-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Vroid.html"><p class="genreheader">Vroid</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Lineplay-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Lineplay.html"><p class="genreheader">Lineplay</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Game Dev-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Game Dev.html"><p class="genreheader">Game Dev</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Blockbench-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Blockbench.html"><p class="genreheader">Blockbench</p><img src="" alt=""></a></div>
+            <!--END-->
+            <!--Sky Children of the Light-->
+            <div class="genreholder"><a href="{{ pagesPath }}gallery/Sky Children of the Light.html"><p class="genreheader">Sky Children of the Light</p><img src="__COVER_PHOTO__" alt=""></a></div>
+            <!--END-->
+        </div>
+    </center>
+</main>

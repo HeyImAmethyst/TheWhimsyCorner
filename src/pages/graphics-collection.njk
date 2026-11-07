@@ -1,0 +1,75 @@
+---
+layout: defaultGridTemplate.njk
+pageTitle: Graphics Collection
+headerTitle: The Whimsy Corner
+nesting: "../../"
+pagesPath: ../../pages/
+---
+
+<link
+  href="{{ nesting }}css/graphicsCollection.css{{ nocache }}"
+  rel="stylesheet"
+/>
+
+<main id="center-container">
+  {# <script
+    src="{{ nesting }}js/graphicsCollection.js{{ nocache }}"
+    defer
+  ></script> #}
+
+  <div id="scrapbook-title">
+    <h1>Graphics Collection!</h1>
+  </div>
+
+  <div id="collection-content">
+    <p>
+      Here are all the stamps, quiz results, and any other small graphics I
+      found while looking around the web! Some of them are gifs. There are two buttons 
+      on this page to turn them on/off when needed.
+    </p>
+
+    <br />
+
+    <div id="collection-container">
+      <!--<img src="https://files.catbox.moe/my1cdk.png" />-->
+      <br />
+      <br />
+
+      <ul class="tabs">
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/stamps.html">
+                Stamps
+            </a>
+          </li>
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/f2u-template-box-collection.html">
+                f2u Template Boxes
+            </a>
+          </li>
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/buttons.html">
+                Buttons
+            </a>
+          </li>
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/shiny-buttons.html">
+                Shiny Buttons
+            </a>
+          </li>
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/userboxes.html">
+                Userboxes
+            </a>
+          </li>
+          <li class="tab">
+            <a href="{{ pagesPath }}graphics-collection/quiz-results.html">
+                Quiz Results
+            </a>
+          </li>
+      </ul>
+      <br />
+      <br />
+      <!--<img src="https://files.catbox.moe/my1cdk.png" />-->
+    </div>
+  </div>
+</main>

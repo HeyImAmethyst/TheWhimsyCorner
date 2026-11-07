@@ -1,0 +1,73 @@
+---
+layout: defaultGridTemplate.njk
+pageTitle: The Whimsy Corner
+headerTitle: The Whimsy Corner
+nesting: ""
+pagesPath: pages/
+---
+
+<link href ="{{ nesting }}css/index.css{{ nocache }}" rel= "stylesheet">
+
+<div id="center-container">
+
+    <main>
+        <div id="welcome-title">
+            <h1>Welcome to The Whimsy Corner!</h1>
+        </div>
+
+        <div id="welcome-image">
+
+            <img src="https://files.catbox.moe/oszszn.png">
+
+        </div>
+
+        <div id="welcome-text">
+            <p>
+
+                <img src="https://files.catbox.moe/my1cdk.png">
+                <br>
+                <br>
+                Hello! Welcome to my little space on the internet were I share
+                my art and other special interests I am interested in! I've gotten
+                tired of the social media I've been using. Most of them are allowing AI to run rampant.
+                I then thought I should make a space for myself were I can post my art. And then
+                I learned that the indie web was a thing. I realized I can use this website to post my art
+                and share my other special interests. This was a good reason to finally learn
+                web development <img src="https://e.deviantart.net/emoticons/m/meow.gif">.
+
+            </p>
+
+            <p>
+                I love to bring a chill, and cosy vibe, fun, acceptance, and open-mindedness the space I 
+                am in. If you like the energy, stick around! But please be mindful of the energy you bring 
+                into this space!
+            </p>
+
+            <p>
+                I'm still learning so if something looks off or is broken I apologize.
+                Feel free to offer any tips on how I could make the site better! I was thinking of
+                ways to make the site more accesisble. I'm not sure if the fonts I used are readable. 
+                If you have a hard time reading them let me know!
+            </p>
+
+            <p> 
+                Also I do have gifs visible on the page. I know that will be an issue for some disabled viwers
+                so I added buttons to turn off the gifs. There will be some pages where the buttons doesn't work
+                like the blog and gallery pages so be careful on those pages!
+            </p>
+
+        </div>
+    </main>
+
+    {% include 'elements/neighbors.njk' %} <!-- adds content of _includes/neighbors.njk here -->
+
+    {# shopid = 41265570 #}
+    {# <div id="extra" align=center>
+        <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
+        <script type='text/javascript'>new Etsy.Mini(41265570,'gallery',3,1,5,'https://www.etsy.com');</script>
+    </div> #}
+
+</div>
+
+
+

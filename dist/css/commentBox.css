@@ -1,0 +1,85 @@
+*{
+  --palletColor1 : #282B57;
+  --palletColor2 : #443482;
+  --palletColor3 : #703E9C;
+  --palletColor4 : #C2469D;
+  --palletColor5 : #E35F8D;
+  --palletColor6 : #EB7A7E;
+  --palletColor7 : #F59182;
+  --palletColor8 : #FAB88E;
+  
+  --lavenderShade1 : #777696;
+  --lavenderShade2 : #695887;
+  
+  /*--textShadowColor: #9a6fb0;*/
+  --textShadowColor: #282B57;
+  
+  --sectionTitleColor: #d0bcff;
+  --sectionTitleOutlineColor: #282b57;
+}
+
+#HCB_comment_box
+{
+    margin-top: -50px;
+    padding: 70px;
+}
+
+/* Makes the comment box fields background to have a yellowish tint. */
+
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website 
+{
+    background-color:white;
+}
+
+/* Makes the comment box textarea much larger. */
+#HCB_comment_box textarea 
+{
+    height:400px;
+}
+
+/* Changes the color of the submitted comments text to red.*/
+
+#HCB_comment_box blockquote 
+{
+    /* color:red; */
+}
+
+/* Changes the color and border of the submit button to green*/
+
+#HCB_comment_box .submit
+{
+
+}
+
+/* Makes the comment box textarea text size bigger, and also makes the comment text size bigger. */
+
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website,
+#HCB_comment_box #hcb_submit,
+#HCB_comment_box .author-name,
+#HCB_comment_box .hcb-comment-body,
+#HCB_comment_box .hcb-comment-tb a 
+{
+    font-size: 24px; /* Adjust the value depending on wanted text size */
+}
+
+/* Makes the Comment section text size bigger. */
+
+#HCB_comment_box .author-name,
+#HCB_comment_box .hcb-comment-body,
+#HCB_comment_box .hcb-comment-tb a 
+{
+    font-size: 24px; /* Adjust the value depending on wanted text size */
+}
+
+input#hcb_form_name 
+{
+    /* color:blue; */
+    font-size:24px;
+    /* background-color:darkgreen; */
+}

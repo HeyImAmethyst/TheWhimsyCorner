@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'elements/htmlHeadDefault.njk' %} <!-- adds content of _includes/headDefault.njk here -->
+  </head>
+  
+  <body>
+
+    <div id= "main-container">
+
+      {% include 'elements/header.njk' %} <!-- adds content of _includes/header.njk here -->
+
+      {% include 'elements/navBar.njk' %} <!-- adds content of _includes/navBar.njk here -->
+
+      {{ content | safe }}
+
+      {% include 'elements/rightSideBar.njk' %} <!-- adds content of _includes/rightSideBar.njk here -->
+
+      {% include 'elements/footer.njk' %} <!-- adds content of _includes/footer.njk here -->
+    </div>
+
+    {# {% include 'footer.njk' %} <!-- adds content of _includes/footer.njk here --> #}
+
+  </body>
+  
+</html>

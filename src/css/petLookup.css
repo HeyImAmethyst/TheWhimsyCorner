@@ -1,0 +1,142 @@
+*
+{
+    cursor: url(http://sunnyneo.com/pointers/cur_fae_dark.gif), auto !important;
+}
+
+
+body,
+b,
+div,
+td,
+a 
+{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #695887;
+}
+
+#main-container
+{
+    background-color: white;
+    
+    margin: 0 auto;
+	width: 550px;
+    height: max-content;
+}
+
+#about-pet
+{
+    text-align: left;
+    padding: 15px;
+}
+
+#pet-image
+{
+    margin-right: 20px !important;
+    border-color: #ddd !important;
+    
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+#pet-image img
+{
+    
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    
+    border-radius: 14px;
+    border-width: 15px;
+    border-color: black !important;
+}
+
+#battledome-content
+{
+    display: grid;
+    
+    grid-template-columns: auto 1fr;
+    
+    grid-template-rows: auto;
+    
+    grid-template-areas:
+        "battledomeAttributes battledomeStats";
+}
+
+#battledome-attributes
+{
+    grid-area: battledomeAttributes;
+    text-align: left;
+    padding: 10px;
+}
+
+#battledome-stats
+{
+    grid-area: battledomeStats;
+    text-align: right;
+    padding: 10px;
+}
+
+.blurb 
+{
+    border-top: 1px solid #ddd;
+    text-align: center;
+    
+    /*width: 500px;*/
+    
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+    color: #695887;
+
+    background-color: white;
+    
+    padding: 15px;
+}
+
+.blurb  p
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+    color: #695887;
+}
+
+.blurb a 
+{
+    
+    color: #444 !important;
+    padding: 5px 15px;
+}
+
+.blurb a:hover 
+{
+    background: #000;
+    color: #eee !important;
+}
+
+.blurb h1 
+{
+    font-size: 20pt;
+    display: inline-block;
+    color: #cda4dc !important;
+    margin-bottom: 10px;
+    background: #000;
+    /*background: #cda4dc;*/
+    color: #cda4dc;
+    padding: 5px 15px;
+}
+
+.blurb p 
+{
+    text-align: justify;
+    color: #666 !important;
+    margin-bottom: 15px;
+}
+
+b 
+{
+    color: #cda4dc;
+}

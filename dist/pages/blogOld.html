@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Whimsy Corner Blog</title>
+        <link rel="icon" href="https://i.imgur.com/s9yxcoF.gif">
+        <meta name="author" content="[your name here]" />
+        <meta name="description" content="[write about your site here]" />
+        
+        <!--you can change this to "simplified-style.css" if changing all the individual colors is too overwhelming-->
+        <link href="../../css/blog.css" rel="stylesheet" />
+        <link href="../../css/mouse.css" rel="stylesheet" />
+        
+        <script src="../../js/blog.js"></script>
+        <script src="../../js/mouseSparkle.js"></script>
+        <script src="../../js/freezeGif.js"></script>
+    </head>
+    <body>
+        <!--keep everything inside a container so we can change the layout for mobile easily-->
+        <div id="container">
+            <aside id="sidebar">
+                <!--another container for layout purposes-->
+                <div class="flex">
+                    <div id="icon">
+                        <!--replace this with the page url so people can refresh the page easily... at least that's what i always click on people's icons to do.-->
+                        <a href="#">
+                            <img src="https://files.catbox.moe/x343l6.jpg" alt="icon" />
+                        </a>
+                    </div>
+
+                    <section id="profile">
+                        <h1>
+                            <!--same here, link to your page (if you want)-->
+                            <a href="#">The Whimsy Corner Blog</a>
+                        </h1>
+                        <!--the first line of your profile~ describe yourself in one sentence or something-->
+                        <p>A blog to place all of my snaily thoughts</p>
+                    </section>
+                </div>
+                
+                <div id="gif-manager">
+                    <button class="play-gif">Play GIFs</button>
+                    <button class="stop-gif">Stop GIFs</button>
+                </div>
+
+                <!--add links to other pages on your site, or other sites you're on!-->
+                <nav>
+                    <h3 style="text-align: center;">Navigation</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../pages/about.html">About</a></li>
+                        <li><a href="../../../pages/blog.html">Blog</a></li>
+                        <li><a href="../../../NeoGallery.html">Gallery</a></li>
+                        <li><a href="../../../pages/neopets.html">My Neopets</a></li>
+                        <li><a href="https://heyimamethyst.atabook.org/">Guest Box</a></li>
+                        <li><a href="../../../pages/smallGraphicsCollection.html">Small Graphics Collection</a></li>
+                        <li><a href="../../../pages/websites.html">Cool Websites</a></li>
+                        <li><a href="../../../pages/resources.html">Resources</a></li>
+                    </ul>
+                    
+                    <h3 style="text-align: center;">Socials</h3>
+                    
+                    <ul>
+                        <li>
+                            <a href="https://www.deviantart.com/heyimamethyst">
+                                Deviant Art
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://twitch.tv/helloimamethyst">
+                                Twitch
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/heyimamethyst/?hl=en" target="_blank">
+                                Instagram
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/HeyImAmethyst44" target="_blank">
+                                Twitter
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/HeyImAmethyst" target="_blank">
+                            Pinterest
+                            </a> 
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--i made it so the stamps section here only shows up on desktop-->
+                <section id="stamps" class="center pc-only">
+                    <a target="_blank" href="https://neocities.org/">
+                        <!--swap this with your site button if you have one!-->
+                        <!--<img src="images/site-button.gif" alt="site button">-->
+                        <!--you can have it link to your site profile if you want people to follow it too :)-->
+                        
+                    </a>
+                    <!--
+                    <a href="https://snewdraws.net/">
+                        <img class="freeze" src="https://files.catbox.moe/lhz2py.gif">
+                    </a>
+                    -->
+                </section>
+
+                <!--feel free to remove the credit or put it somewhere else, i don't mind!-->
+                <p class="center small-text">site template by <a href="https://nomnomnami.com">NomnomNami</a></p>
+            </aside>
+
+            <!--now for the POSTS! the "tagged" class makes sure the tag filters do what they're supposed to-->
+            <main class="tagged">
+                <!--first is a deviantart inspired "current status" section where you can list things you're currently up to-->
+                <section id="status" class="pinned">
+                    <!--remove the "open" part to have this closed by default-->
+                    <details open>
+                        <!--i like to include a last updated date for this part-->
+                        <summary>status <time>6/10/2025</time></summary>
+                        <ul>
+                            <!--i don't think this is reeeally how you're supposed to use html lists, but we're just having fun here so it's ok-->
+                            <li>reading:</li>
+                            <li>Not reading anything at the moment</li>
+
+                            <li>listening to:</li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=E7FU_mqhFGk" target="_blank">Neverender </a> by
+                                Justice and Tame Impala and <a href="https://www.youtube.com/watch?v=gs-MtItyOFc" target="_blank">Breathe Deeper </a> by 
+                                Tame Impala
+                            </li>
+
+                            <li>playing:</li>
+                            <li>Cookie Shop DS and Neko Atsume 3DS</li>
+                        </ul>
+                    </details>
+                </section>
+
+                <section id="tag-filters" class="pinned">
+                    <details id="filterDetails" open>
+                        <summary>tag filters</summary>
+                        <!--when you add new tags here, make sure to add them to your css as well so that the filters will work properly. careful not to make any typos...!-->
+                        <label><input type="radio" id="all" name="tag" checked />all</label>
+                        <!--
+                        <label><input type="radio" id="intro" name="tag" />#intro</label>
+                        <label><input type="radio" id="personal" name="tag" />#personal</label>
+                        <label><input type="radio" id="art" name="tag" />#art</label>
+                        <label><input type="radio" id="secret" name="tag" />#secret</label>
+                        -->
+                    </details>
+                </section>
+
+                <!--BEGIN POSTING!!!!!!!!-->
+                
+                <div id="blog">
+                    <div id="postsContainer"></div>
+                </div>
+                
+                <!--this button brings you back to the top of the page, like it says-->
+                <section id="page-nav">
+                    <p class="center"><a href="#">back to top</a></p>
+                </section>
+            </main>
+
+            <footer>Website began production in December of 2025</footer>
+        </div>
+    </body>
+</html>

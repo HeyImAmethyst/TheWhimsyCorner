@@ -1,0 +1,27 @@
+footer
+{
+    
+    grid-area: footer;
+    
+    color: black;
+    /* grid-area: 2 / 1 / 2 / 4; */
+    
+    background-color: azure;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    text-align: center;
+    /* text-wrap: nowrap; */
+    /* width: 100vh; */
+    /* width: auto; */
+    
+    display: grid;
+    grid-template-columns: 0.4fr;
+}
+
+#footer-text
+{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}

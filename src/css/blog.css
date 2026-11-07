@@ -1,0 +1,186 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+*{
+  --palletColor1 : #282B57;
+  --palletColor2 : #443482;
+  --palletColor3 : #703E9C;
+  --palletColor4 : #C2469D;
+  --palletColor5 : #E35F8D;
+  --palletColor6 : #EB7A7E;
+  --palletColor7 : #F59182;
+  --palletColor8 : #FAB88E;
+  
+  --lavenderShade1 : #777696;
+  --lavenderShade2 : #695887;
+  
+  /*--textShadowColor: #9a6fb0;*/
+  --textShadowColor: #282B57;
+  
+  --sectionTitleColor: #d0bcff;
+  --sectionTitleOutlineColor: #282b57;
+}
+
+body {
+  background-color: #436a7b;
+  /* background-image: url('../../img/bg_diamond.png'); */
+  /* background-image: url('https://dl.glitter-graphics.com/pub/3506/3506030ltcrq8gn81.jpg'); */
+  background-image: url('https://files.catbox.moe/iew636.jpg');
+	background-position: top;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+
+  
+}
+
+p {
+  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+}
+
+hr {
+  border: solid var(--palletColor1);
+  border-width: 2px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.left {
+  float: left;
+  margin-right: 1em;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+a:hover { 
+  background-color: #fff6e6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #34436f;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  /* margin: 3em auto;
+  width: 90%;
+	max-width: 700px; */
+
+  max-width: 100vh;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 5px;
+
+	/* background-color: #f1e3c9; */
+  /* background-color: white; */
+
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightblue;
+
+  border-width:7px;
+  border-style: solid;
+  border-image: url("https://i.imgur.com/NJa4bp2.png") 8 fill round; 
+
+  /* color: #151515; 
+  outline-color: #a9a9a9;
+  outline-style: ridge;
+  outline-width: 4px;
+  outline-offset: 0; */
+}
+
+#content {
+  padding: 10px 5% 20px 5%;
+}
+
+
+/*HEADER STYLE*/
+#header {
+  background-color: rebeccapurple;
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--palletColor1);
+
+  padding: 0 5%;
+}
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+#header li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  color: white;
+  text-decoration: none;
+  background-color: inherit;
+}
+#header li a:hover {
+  text-decoration: underline;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+#recentpostlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+}

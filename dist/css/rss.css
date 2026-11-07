@@ -1,0 +1,47 @@
+body
+{
+    max-width: 250px;
+    height: max-content;
+}
+
+body h3 
+{
+    display: none;
+}
+
+body>h4 
+{
+    padding: 1.1em;
+}
+
+body>p 
+{
+    padding: 1.1em;
+}
+
+body>h4 
+{
+    font-size: 1.2em;
+    
+    margin: auto;
+    text-align: left;
+    
+    color: var(--lavenderShade2);
+    background-color: var(--sectionTitleColor);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+body>p 
+{
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: left;
+    
+    background-color: var(--sectionTitleColor);
+    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    padding-top: 0px;
+}

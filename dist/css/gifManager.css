@@ -1,0 +1,35 @@
+*{
+    
+    --palletColor1 : #282B57;
+    --palletColor2 : #443482;
+    --palletColor3 : #703E9C;
+    --palletColor4 : #C2469D;
+    --palletColor5 : #E35F8D;
+    --palletColor6 : #EB7A7E;
+    --palletColor7 : #F59182;
+    --palletColor8 : #FAB88E;
+    
+    --lavenderShade1 : #777696;
+    --lavenderShade2 : #695887;
+    
+    --sectionTitleColor: #d0bcff;
+}
+
+#gif-manager
+{
+    grid-area: gifmanager;
+    height: max-content;
+    /*margin-bottom: 500px; */
+    
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    
+    padding: 8px;
+    
+    background-color: var(--lavenderShade2);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rebeccapurple;
+}

@@ -1,0 +1,123 @@
+---
+layout: defaultGridTemplate.njk
+pageTitle: My Neopets
+headerTitle: The Whimsy Corner
+nesting: "../../"
+pagesPath: ../../pages/
+---
+
+<link href ="{{ nesting }}css/neopets.css" rel= "stylesheet">
+
+<main id="center-container">
+
+    <div id="neopets-title">
+        <h1>My Neopets!</h1>
+    </div>
+
+    <div id="neopets-content">
+        <p>
+            I have had this account since the petpetpark days. I recently decided to get back into neopets after
+            finding out that there is lore and more stuff to do. Thank you to the many neopets tutorials and jellyneo!
+            
+        </p>
+        
+        <br>
+        
+        <p>For those interested here is my <a href="https://www.neopets.com/userlookup.phtml?user=yyuuio6103">user lookup page</a>.</p>
+        
+        <br>
+        
+        <div id="my-neopets-container">
+            
+            <img src="https://files.catbox.moe/my1cdk.png">
+            <br>
+            <br>
+            
+            <div id="neopets-container">
+                <!--<img src="https://files.catbox.moe/1b8xrl.png">-->
+                <!--
+                <img src="https://files.catbox.moe/713on7.png">
+                <img src="https://files.catbox.moe/wokejv.png">
+                <img src="https://files.catbox.moe/2763ep.png">
+                -->
+                <img src="https://pets.neopets.com/cpn/jamaca7575/1/4.png" />
+                <img src="https://pets.neopets.com/cpn/april4656/1/4.png" />
+                <img src="https://pets.neopets.com/cpn/mhgfjgfdhjfgfdj/1/4.png" />
+                <img src="https://pets.neopets.com/cpn/mississippi34/1/4.png" />
+                <img src="https://pets.neopets.com/cpn/Huricanos/1/4.png" />
+            </div>
+            
+            <br>
+            <br>
+            <img src="https://files.catbox.moe/my1cdk.png">
+            
+            <h2>Neopets Resources!</h2>
+            
+            <div id="neopets-resources-container">
+                
+                <ul>
+                    <li>
+                        <a class="enlarge" href="http://www.sunnyneo.com" target="_blank">
+                            <img class="freeze" src="http://www.sunnyneo.com/linktous/LB_Glitter.gif" title="SunnyNeo.com" alt="Sunnyneo.com" border="0" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.sunnyneo.com/petimagefinder.php" target="_blank">
+                            Sunny Neo Pet Image Finder
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.sunnyneo.com/dailies.php" target="_blank">
+                            Sunny Neo Dailies
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/">
+                            <img class="freeze" src="https://www.drsloth.net/links/link10.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=dailies" target="_blank">
+                            Jelly Neo Dailies
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=dailypuzzle" target="_blank">
+                            Jelly Neo Daily Puzzle Answer
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=faerie_crossword" target="_blank">
+                            Jelly Neo Faerie Cossword Answer
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=lunartemple" target="_blank">
+                            Jelly Neo Lunar Temple Guide
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=diseasescures" target="_blank">
+                            Jelly Neo Diseases and Cures Guide
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://www.jellyneo.net/?go=toy_repair_shop" target="_blank">
+                            Jelly Neo Toy Repair Shop Guide
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlarge" href="https://impress.openneo.net/">
+                            Neopets Dress to Impress
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+</main>
+
