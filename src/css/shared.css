@@ -505,11 +505,11 @@ body
     color: white;
 }
 
-.button
+#gif-manager button
 {
-	border: solid 1px;
-	overflow: auto;
-	/* background: var(--m-bg-color); */
+	/* border: solid 1px;
+	overflow: auto; */
+    background-color: white;
     padding: 5px;
 	margin: 5px;
 }
